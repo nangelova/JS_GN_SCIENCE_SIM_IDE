@@ -1,0 +1,31 @@
+@import '../main';
+
+.topBar
+{
+    $topBarHeight: 60px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: $topBarHeight;
+
+    background-color: rgb( 242, 242, 242 );
+
+    //======================================================================================================================
+
+    .levelButton
+    {
+        position: absolute;
+        left: 10px;
+        width: 46px;
+        height: 46px;
+        @extend .verticalCentered;
+
+        border-radius: 8px;
+        border: 1px solid #cccccc;
+        background-color: white;
+
+        pointer-events: auto;
+
+        cursor: pointer;
+    }
+}

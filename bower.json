@@ -1,0 +1,14 @@
+{
+    "devDependencies": {},
+    "version": "0.1.0",
+    "name": "JSGNSSI",
+    "dependencies": {
+        "jquery": "2.1.1",
+        "angular-mocks": "1.2.25",
+        "fastclick": "1.0.3",
+        "lodash": "2.4.1",
+        "normalize-css": "3.0.1",
+        "angular": "1.2.25",
+        "utils-drag": "*"
+    }
+}

@@ -1,0 +1,68 @@
+@import '../main';
+
+//=============================================================================================================
+
+.dropDown
+{
+    $width: 100px;
+    $height: 40px;
+    position: absolute;
+    display: inline-block;
+
+    width: $width;
+    height: $height;
+
+    .dropDownButton
+    {
+        width: 100%;
+        height: $height;
+        line-height: $height;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .buttonOverlay
+    {
+        position: absolute;
+
+        width: 100%;
+        height: $height;
+
+        top: 0px;
+        left: 0px;
+
+        background-color: transparent;
+    }
+
+    .choicesPanel
+    {
+        display: inline-block;
+
+        top: $height;
+        width: 100%;
+
+        background-color: transparent;
+
+        .choice
+        {
+            width: 100%;
+            height: $height;
+            line-height: $height;
+            text-align: center;
+
+//            &:first-of-type
+//            {
+//                border-top: none;
+//            }
+
+            &.isSelected
+            {
+//                cursor: default;
+            }
+
+            cursor: pointer;
+        }
+    }
+}
+
+//=============================================================================================================

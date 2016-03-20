@@ -1,0 +1,17 @@
+<div id="levelMenu"
+		>
+
+	<div class="fullScreenGray"
+		 ng-class="{ active: levelMenu.isActive }"
+		 ng-click="onFullScreenGrayClicked()"></div>
+
+	<div class="panel"
+		 ng-class="{ active: levelMenu.isActive }">
+
+        <div class="title">{{appName}}</div>
+		<div class="backButton" ng-click="onBackButtonClicked()">
+            <div class="icon fittedBackground"></div>
+		</div>
+
+    </div>
+</div>

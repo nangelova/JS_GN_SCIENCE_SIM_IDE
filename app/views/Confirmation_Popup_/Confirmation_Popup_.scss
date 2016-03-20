@@ -1,0 +1,74 @@
+@import '../main';
+
+#confirmationPopup
+{
+    .panel
+    {
+        position: absolute;
+
+        width: 220px;
+        height: 131px;
+        @extend .centered;
+
+        background-color: #fff;
+
+        border-radius: 5px;
+
+        .popupPrompt
+        {
+            position: absolute;
+            top: 24px;
+            width: 100%;
+
+            text-align: center;
+            font-family: 'BentonSans-Book';
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .okButton, .cancelButton
+        {
+            position: absolute;
+            bottom: 20px;
+            width: 75px;
+            height: 44px;
+
+            @extend .fittedBackground;
+            cursor: pointer;
+
+            font-family: 'BentonSans-Book';
+            font-size: 16px;
+            color: white;
+            line-height: 45px;
+        }
+
+        .okButton
+        {
+            left: 25px;
+
+            background-image: url('../assets/images/confirmationPopup/yesButton.png');
+
+            &:after
+            {
+                position: absolute;
+                left: 32px;
+                content: 'YES';
+            }
+        }
+
+        .cancelButton
+        {
+            left: 121px;
+
+            background-image: url('../assets/images/confirmationPopup/noButton.png');
+
+            &:after
+            {
+                position: absolute;
+                left: 36px;
+
+                content: 'NO';
+            }
+        }
+    }
+}

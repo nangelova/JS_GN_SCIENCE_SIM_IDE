@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="JSGNSSI">
+<head>
+    <meta charset="utf-8">
+    <title> JS GN & SCIENCE SIM IDE </title>
+
+    <!-- Disallow zooming. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Allow the app to be added to the home screen on iOS devices. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- build:js js/head.js -->
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:css css/all.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Drop_Down_.css">
+    <link rel="stylesheet" href="css/Level_Menu_.css">
+    <link rel="stylesheet" href="css/Top_Bar_.css">
+    <link rel="stylesheet" href="css/Confirmation_Popup_.css">
+    <!-- endbuild -->
+
+</head>
+
+<body>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+        <script src="bower_components/hammerjs/hammer.js"></script>
+        <script src="bower_components/hammerjs/hammer.min.js"></script>
+        <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+
+        <script src="bower_components/hammerjs/hammer.js"></script>
+        <script src="bower_components/utils-drag/utils-drag.js"></script>
+
+        <script src="js/jquery-ui-touch-punch-master/jquery.ui.touch-punch.js"></script>
+        <script src="js/jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
+
+        <script src="js/Config_/Config_.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/mainController.js"></script>
+
+        <script src="views/Confirmation_Popup_/Confirmation_Popup_.js"></script>
+        <script src="views/Drop_Down_/Drop_Down_.js"></script>
+        <script src="views/Level_Menu_/Level_Menu_.js"></script>
+        <script src="views/Top_Bar_/Top_Bar_.js"></script>
+
+        <!-- endbuild -->
+
+    <div id="mainContainer"
+         ng-controller="mainController"
+         ng-style="{
+                     'min-width': minWindowWidth,
+                     'min-height': minWindowHeight
+                 }">
+
+        <top-bar></top-bar>
+		<level-menu></level-menu>
+
+		<confirmation-popup></confirmation-popup>
+
+        <div id="debug">
+
+            <div class="button"
+                 ng-show="!debug.isActive"
+                 ng-click="debug.isActive = true">
+            </div>
+
+            <div class="panel"
+                 ng-show="debug.isActive"
+                 ng-click="debug.isActive = false">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

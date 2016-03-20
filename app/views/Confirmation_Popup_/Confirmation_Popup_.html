@@ -1,0 +1,22 @@
+<div id="confirmationPopup">
+
+    <div class="fullScreenGray"
+         ng-class="{ active: confirmationPopup.isActive }"
+         ng-click="close()"
+            ></div>
+
+    <div class="panel"
+         ng-show="confirmationPopup.isActive">
+
+        <div class="popupPrompt">{{ confirmationPopup.message }}</div>
+
+        <div class="okButton"
+             ng-click="onOkButtonClicked()"
+                ></div>
+
+        <div class="cancelButton"
+             ng-click="close()"
+                ></div>
+    </div>
+
+</div>

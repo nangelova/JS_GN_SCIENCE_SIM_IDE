@@ -1,0 +1,58 @@
+@import '../main';
+
+#levelMenu
+{
+    $levelMenu_width: 300px;
+
+    .panel
+    {
+        position: absolute;
+
+        top: 0px;
+        left: - $levelMenu_width;
+
+        width: $levelMenu_width;
+        height: 100%;
+
+        background-color: white;
+
+        transition: left 200ms linear;
+
+        &.active
+        {
+            left: 0px;
+        }
+
+        .title
+        {
+            position: absolute;
+            padding-left: 10px;
+            max-width: $levelMenu_width - 60;
+            height: 60px;
+
+            font-family: "BentonSans-Medium";
+            font-size: 18px;
+            line-height: 60px;
+            color: grey;
+        }
+
+        .backButton
+        {
+            position: relative;
+            float: right;
+            top: 10px;
+            width: 30px;
+            padding: 10px 12px;
+
+            .icon
+            {
+                width: 23px;
+                height: 23px;
+                background-image: url( '../assets/images/levelMenu/closeButton.png' );
+                @extend .fittedBackground;
+            }
+
+            cursor: pointer;
+        }
+    }
+}

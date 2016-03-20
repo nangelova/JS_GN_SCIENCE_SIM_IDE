@@ -1,0 +1,49 @@
+@import 'main';
+
+// Compass has an outdated idea of what a clearfix is.
+// http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+@mixin user-select($value) {
+    -webkit-user-select: $value;
+}
+
+button[disabled]
+{
+    pointer-events: none;
+}
+
+//=============================================================================================================
+
+body
+{
+    margin: 0;
+    overflow: hidden;
+    font-family: "BentonSans-Regular", Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+//  -webkit-appearance: none;
+    border-radius: 7px;
+    background-color: #000;color: black;
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: grey;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar-button {
+    background-color: grey;
+}
+
+//=============================================================================================================

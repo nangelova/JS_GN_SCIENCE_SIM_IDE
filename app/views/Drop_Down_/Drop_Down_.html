@@ -1,0 +1,25 @@
+<div class="dropDown">
+
+	<div class="label"></div>
+
+	<div class="choice dropDownButton"
+		 ng-click="onButtonClick()">
+		{{ dropDown.selectedChoice.label }}
+        <div class="arrow"></div>
+	</div>
+
+	<div class="buttonOverlay"
+		 ng-show="dropDown.isActive"
+		 ng-click="$event.stopPropagation()"></div>
+
+	<div class="choicesPanel"
+		 ng-show="dropDown.isActive">
+        <div class="choicePanelArrowUp"></div>
+		<div class="choice"
+			 ng-repeat="choice in dropDown.choices"
+			 ng-class="{ isSelected: choice === dropDown.selectedChoice }"
+			 ng-click="onChoiceClick( choice )"
+				>{{ choice.label }}</div>
+	</div>
+
+</div>
