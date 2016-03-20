@@ -13,6 +13,3 @@ __pycache_
 **.log
 
 **/.bin
-
-node_modules/
-app/bower_components/

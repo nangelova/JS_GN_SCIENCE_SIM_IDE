@@ -1,0 +1,33 @@
+{
+  "name": "astea-utils-drag",
+  "description": "Utils-drag is a angular directive that gives you the ability to drag anything with either the mouse or touch events",
+  "main": "utils-drag.js",
+  "dependencies": {
+    "angular": "~1.2.25",
+    "jquery": "2.1.1",
+    "jquery-ui": "1.11.4"
+  },
+  "keywords": [
+    "drag",
+    "angular"
+  ],
+  "authors": [
+    {
+      "name": "Mihail Mukov"
+    },
+    {
+      "name": "Nora Angelova"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nangelova/utils-drag",
+  "_release": "f82552b910",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f82552b910cbf57520d7a19357a65922ce556a03"
+  },
+  "_source": "git://github.com/nangelova/utils-drag.git",
+  "_target": "*",
+  "_originalSource": "utils-drag"
+}
